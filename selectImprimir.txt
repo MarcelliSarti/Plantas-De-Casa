@@ -1,0 +1,5 @@
+select c.*, o.*, co.*
+from cliente c, obra o, contrato co
+where(c.codCliente = co.codCliente)
+and (o.codObra = co.Cod_obra)
+and (co.codigo = :cod)

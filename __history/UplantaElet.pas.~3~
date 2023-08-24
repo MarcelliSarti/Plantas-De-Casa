@@ -1,0 +1,62 @@
+unit UplantaElet;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.Mask, Vcl.DBCtrls, Vcl.Grids,
+  Vcl.DBGrids, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TFRMplantaElet = class(TForm)
+    Label1: TLabel;
+    EDTpesquisar: TEdit;
+    DBNavigator1: TDBNavigator;
+    DBImage1: TDBImage;
+    DBGrid1: TDBGrid;
+    Label2: TLabel;
+    DBEdit1: TDBEdit;
+    Label3: TLabel;
+    DBEdit2: TDBEdit;
+    Label4: TLabel;
+    DBEdit3: TDBEdit;
+    Label5: TLabel;
+    DBEdit4: TDBEdit;
+    FDQueryElet: TFDQuery;
+    DataSource1: TDataSource;
+    procedure EDTpesquisarChange(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FRMplantaElet: TFRMplantaElet;
+
+implementation
+
+{$R *.dfm}
+
+uses Umodulo;
+
+procedure TFRMplantaElet.EDTpesquisarChange(Sender: TObject);
+begin
+if EDTpesquisar.Text <> ' ' then
+begin
+FDQueryElet.SQL.Clear;
+FDQueryElet.SQL.Add('select * from Plantas');
+FDQueryElet.SQL.Add('where descricao like ' + quotedstr ('%' + EDTpesquisar.Text + '%'));
+FDQueryElet.Open;
+end
+else
+FDQueryElet.SQL.Clear;
+FDQueryElet.Close;
+FDQueryElet.SQL.Add('select * from Plantas');
+FDQueryElet.Open;
+end;
+
+end.

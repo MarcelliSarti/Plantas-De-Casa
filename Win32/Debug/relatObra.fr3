@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.1.5" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43797,9098503009" ReportOptions.Description.Text="" ReportOptions.LastChange="43797,9132064236" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDBDataset4" DataSetName="obra"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="15" HGuides.Text="" VGuides.Text="">
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="60,47248" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Date" Left="623,62245" Top="11,33859" Width="79,37013" Height="18,89765" Text="[Date]"/>
+      <TfrxMemoView Name="Time" Left="623,62245" Top="34,01577" Width="79,37013" Height="18,89765" Text="[Time]"/>
+    </TfrxPageHeader>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="41,57483" Left="0" Top="343,93723" Width="718,1107">
+      <TfrxMemoView Name="Page" Left="623,62245" Top="15,11812" Width="79,37013" Height="18,89765" Text="[Page#]"/>
+    </TfrxPageFooter>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="56,69295" Left="0" Top="139,84261" Width="718,1107">
+      <TfrxMemoView Name="Memo1" Left="11,33859" Top="3,77953" Width="52,91342" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="Código:"/>
+      <TfrxMemoView Name="Memo2" Left="71,81107" Top="3,77953" Width="151,1812" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="Descrição:"/>
+      <TfrxMemoView Name="Memo3" Left="11,33859" Top="30,23624" Width="211,65368" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="Cidade:"/>
+      <TfrxMemoView Name="Memo4" Left="230,55133" Top="30,23624" Width="64,25201" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="UF:"/>
+      <TfrxMemoView Name="Memo5" Left="230,55133" Top="3,77953" Width="275,90569" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="Endereço:"/>
+      <TfrxMemoView Name="Memo6" Left="525,35467" Top="3,77953" Width="177,63791" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="Bairro:"/>
+      <TfrxMemoView Name="Memo7" Left="525,35467" Top="30,23624" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="CEP:"/>
+    </TfrxHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="64,25201" Left="0" Top="219,21274" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset4" DataSetName="obra" RowCount="0">
+      <TfrxMemoView Name="obracodObra" Left="11,33859" Top="3,77953" Width="52,91342" Height="18,89765" DataField="codObra" DataSet="frxDBDataset4" DataSetName="obra" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[obra.&#34;codObra&#34;]"/>
+      <TfrxMemoView Name="obradescricao" Left="71,81107" Top="3,77953" Width="151,1812" Height="18,89765" DataField="descricao" DataSet="frxDBDataset4" DataSetName="obra" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[obra.&#34;descricao&#34;]"/>
+      <TfrxMemoView Name="obraenderecoObra" Left="230,55133" Top="3,77953" Width="275,90569" Height="18,89765" DataField="enderecoObra" DataSet="frxDBDataset4" DataSetName="obra" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[obra.&#34;enderecoObra&#34;]"/>
+      <TfrxMemoView Name="obrabairroObra" Left="525,35467" Top="3,77953" Width="177,63791" Height="18,89765" DataField="bairroObra" DataSet="frxDBDataset4" DataSetName="obra" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[obra.&#34;bairroObra&#34;]"/>
+      <TfrxMemoView Name="obracidadeObra" Left="11,33859" Top="34,01577" Width="211,65368" Height="18,89765" DataField="cidadeObra" DataSet="frxDBDataset4" DataSetName="obra" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[obra.&#34;cidadeObra&#34;]"/>
+      <TfrxMemoView Name="obraUFObra" Left="230,55133" Top="34,01577" Width="64,25201" Height="18,89765" DataField="UFObra" DataSet="frxDBDataset4" DataSetName="obra" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[obra.&#34;UFObra&#34;]"/>
+      <TfrxMemoView Name="obraCepObra" Left="525,35467" Top="34,01577" Width="94,48825" Height="18,89765" DataField="CepObra" DataSet="frxDBDataset4" DataSetName="obra" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[obra.&#34;CepObra&#34;]"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

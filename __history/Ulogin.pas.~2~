@@ -1,0 +1,41 @@
+unit Ulogin;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls;
+
+type
+  TFRMlogin = class(TForm)
+    Panel1: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Elogin: TEdit;
+    Esenha: TEdit;
+    Image1: TImage;
+    BTNlimpar: TBitBtn;
+    BTNentrar: TBitBtn;
+    BTNsair: TBitBtn;
+    procedure BTNsairClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FRMlogin: TFRMlogin;
+
+implementation
+
+{$R *.dfm}
+
+uses Umenu;
+
+procedure TFRMlogin.BTNsairClick(Sender: TObject);
+begin
+FRMmenu.Show;
+end;
+
+end.

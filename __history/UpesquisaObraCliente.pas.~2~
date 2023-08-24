@@ -1,0 +1,30 @@
+unit UpesquisaObraCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.ExtCtrls, Vcl.DBCtrls,
+  Vcl.Grids, Vcl.DBGrids, Vcl.Buttons, Vcl.StdCtrls;
+
+type
+  TFRMPesquisaObraCLiente = class(TForm)
+    Label1: TLabel;
+    EDTpesquisar: TEdit;
+    SpeedButton1: TSpeedButton;
+    DBGrid1: TDBGrid;
+    DBNavigator1: TDBNavigator;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FRMPesquisaObraCLiente: TFRMPesquisaObraCLiente;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,68 @@
+unit UcadPlantas;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, Vcl.ExtCtrls,
+  Vcl.StdCtrls, Vcl.DBCtrls, Vcl.Buttons, Data.DB, Vcl.Mask,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client;
+
+type
+  TFRMcadPlantas = class(TForm)
+    FDQueryPlantas: TFDQuery;
+    FDTransactionPlantas: TFDTransaction;
+    FDQueryPlantasCod_planta: TFDAutoIncField;
+    FDQueryPlantasdescricao: TWideStringField;
+    FDQueryPlantascodCliente: TIntegerField;
+    FDQueryPlantasTipo: TIntegerField;
+    FDQueryPlantascodObra: TIntegerField;
+    FDQueryPlantasdata: TDateField;
+    FDQueryPlantasimagemPlanta: TBlobField;
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    DataSource1: TDataSource;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    Label3: TLabel;
+    DBEdit3: TDBEdit;
+    Label4: TLabel;
+    DBEdit4: TDBEdit;
+    Label5: TLabel;
+    Label6: TLabel;
+    DBEdit6: TDBEdit;
+    BTNpesquisaCliente: TBitBtn;
+    Label7: TLabel;
+    Enome: TEdit;
+    DBComboBox1: TDBComboBox;
+    Label8: TLabel;
+    Edescricao: TEdit;
+    BTNpesquisaObra: TBitBtn;
+    Label9: TLabel;
+    Panel1: TPanel;
+    Label10: TLabel;
+    Label11: TLabel;
+    Label12: TLabel;
+    Label13: TLabel;
+    Label14: TLabel;
+    Label15: TLabel;
+    Label16: TLabel;
+    Label17: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FRMcadPlantas: TFRMcadPlantas;
+
+implementation
+
+{$R *.dfm}
+
+uses Umodulo;
+
+end.

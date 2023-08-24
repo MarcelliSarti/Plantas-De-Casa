@@ -1,0 +1,30 @@
+unit UpesquisFunc;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.ExtCtrls, Vcl.DBCtrls,
+  Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TFRMPesquisaFunc = class(TForm)
+    SpeedButton1: TSpeedButton;
+    EDTpesquisar: TEdit;
+    Label1: TLabel;
+    DBGrid1: TDBGrid;
+    DBNavigator1: TDBNavigator;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FRMPesquisaFunc: TFRMPesquisaFunc;
+
+implementation
+
+{$R *.dfm}
+
+end.

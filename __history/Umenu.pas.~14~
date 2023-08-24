@@ -1,0 +1,140 @@
+unit Umenu;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.Menus, Vcl.ExtCtrls;
+
+type
+  TFRMmenu = class(TForm)
+    MainMenu1: TMainMenu;
+    Cadastro1: TMenuItem;
+    Cliente1: TMenuItem;
+    Obras1: TMenuItem;
+    Acesso1: TMenuItem;
+    plantas1: TMenuItem;
+    Contrato1: TMenuItem;
+    Aprovaes1: TMenuItem;
+    Baixa1: TMenuItem;
+    Alta1: TMenuItem;
+    N3D1: TMenuItem;
+    Hidraulica1: TMenuItem;
+    Eltrica1: TMenuItem;
+    Gs1: TMenuItem;
+    Esgosto1: TMenuItem;
+    Amarraodeferro1: TMenuItem;
+    StatusBar1: TStatusBar;
+    Timer1: TTimer;
+    Funcionrios1: TMenuItem;
+    AndamentodaObra1: TMenuItem;
+    Plantas2: TMenuItem;
+    procedure Timer1Timer(Sender: TObject);
+    procedure Cliente1Click(Sender: TObject);
+    procedure Obras1Click(Sender: TObject);
+    procedure Funcionrios1Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure Contrato1Click(Sender: TObject);
+    procedure Aprovaes1Click(Sender: TObject);
+    procedure AndamentodaObra1Click(Sender: TObject);
+    procedure Plantas2Click(Sender: TObject);
+    procedure Baixa1Click(Sender: TObject);
+    procedure Alta1Click(Sender: TObject);
+    procedure N3D1Click(Sender: TObject);
+    procedure Hidraulica1Click(Sender: TObject);
+    procedure Eltrica1Click(Sender: TObject);
+    procedure Gs1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FRMmenu: TFRMmenu;
+
+implementation
+
+{$R *.dfm}
+
+uses UcadCliente, UcadFuncionarios, UcadObra, Uandamento, Uaprovações,
+  Ucontrato, UcadPlantas, UplantaBaixa, UplantaAlta, Uplanta3D,
+  Uplantahidraulica, UplantaElet, Uplantasgas;
+
+procedure TFRMmenu.Alta1Click(Sender: TObject);
+begin
+FRMplantaAlta.Show;
+end;
+
+procedure TFRMmenu.AndamentodaObra1Click(Sender: TObject);
+begin
+frmAndamento.Show;
+end;
+
+procedure TFRMmenu.Aprovaes1Click(Sender: TObject);
+begin
+FRMaprovacoes.Show;
+end;
+
+procedure TFRMmenu.Baixa1Click(Sender: TObject);
+begin
+FRMplantaBaixa.Show;
+end;
+
+procedure TFRMmenu.Cliente1Click(Sender: TObject);
+begin
+FRMcadCliente.Show;
+end;
+
+procedure TFRMmenu.Contrato1Click(Sender: TObject);
+begin
+FRMcontrato.Show;
+end;
+
+procedure TFRMmenu.Eltrica1Click(Sender: TObject);
+begin
+FRMplantaElet.Show;
+end;
+
+procedure TFRMmenu.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+application.Terminate;
+end;
+
+procedure TFRMmenu.Funcionrios1Click(Sender: TObject);
+begin
+FRMcadFuncioanario.Show;
+end;
+
+procedure TFRMmenu.Gs1Click(Sender: TObject);
+begin
+FRMplantaGas.Show;
+end;
+
+procedure TFRMmenu.Hidraulica1Click(Sender: TObject);
+begin
+FRMplantaHidraulica.Show;
+end;
+
+procedure TFRMmenu.N3D1Click(Sender: TObject);
+begin
+FRMplanta3D.Show;
+end;
+
+procedure TFRMmenu.Obras1Click(Sender: TObject);
+begin
+FRMcadObra.Show;
+end;
+
+procedure TFRMmenu.Plantas2Click(Sender: TObject);
+begin
+FRMcadPlantas.Show;
+end;
+
+procedure TFRMmenu.Timer1Timer(Sender: TObject);
+begin
+StatusBar1.Panels[1].Text:= datetostr(date);
+StatusBar1.Panels[2].Text:= timetostr(time);
+end;
+
+end.

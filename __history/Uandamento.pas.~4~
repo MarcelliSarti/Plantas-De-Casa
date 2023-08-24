@@ -1,0 +1,43 @@
+unit Uandamento;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtDlgs,
+  Vcl.DBCtrls, Vcl.ExtCtrls,jpeg,clipbrd;
+
+type
+  TfrmAndamento = class(TForm)
+    DBNavigator1: TDBNavigator;
+    DBImage1: TDBImage;
+    OpenPictureDialog1: TOpenPictureDialog;
+    BitBtn1: TBitBtn;
+    procedure BitBtn1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmAndamento: TfrmAndamento;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmAndamento.BitBtn1Click(Sender: TObject);
+var jpg: tjpegimage;
+begin
+ if OpenPictureDialog1.Execute then
+ begin
+   jpg:=TJPEGImage.Create;
+   jpg.LoadFromFile(OpenPictureDialog1.FileName);
+   Clipboard.Assign(jpg);
+   DBImage1.PasteFromClipboard;
+   jpg.Free
+ end;
+end;
+
+end.

@@ -1,0 +1,24 @@
+unit UpesquisaAndamento;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TFRMpesquisaAndamento = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FRMpesquisaAndamento: TFRMpesquisaAndamento;
+
+implementation
+
+{$R *.dfm}
+
+end.

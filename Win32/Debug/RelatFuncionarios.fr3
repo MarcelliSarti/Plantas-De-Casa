@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.1.5" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43797,899196713" ReportOptions.Description.Text="" ReportOptions.LastChange="43797,9042326505" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDBDataset3" DataSetName="funcionario"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="15" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="86,92919" Left="0" Top="241,88992" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset3" DataSetName="funcionario" RowCount="0">
+      <TfrxMemoView Name="funcionarioCodFuncionario" Left="7,55906" Top="7,55906" Width="49,13389" Height="18,89765" DataField="CodFuncionario" DataSet="frxDBDataset3" DataSetName="funcionario" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[funcionario.&#34;CodFuncionario&#34;]"/>
+      <TfrxMemoView Name="funcionarioNomeFuncionario" Left="68,03154" Top="7,55906" Width="230,55133" Height="18,89765" DataField="NomeFuncionario" DataSet="frxDBDataset3" DataSetName="funcionario" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[funcionario.&#34;NomeFuncionario&#34;]"/>
+      <TfrxMemoView Name="funcionarioEnderecoFuncionario" Left="306,14193" Top="7,55906" Width="207,87415" Height="18,89765" DataField="EnderecoFuncionario" DataSet="frxDBDataset3" DataSetName="funcionario" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[funcionario.&#34;EnderecoFuncionario&#34;]"/>
+      <TfrxMemoView Name="funcionarioBairroFuncionario" Left="532,91373" Top="7,55906" Width="177,63791" Height="18,89765" DataField="BairroFuncionario" DataSet="frxDBDataset3" DataSetName="funcionario" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[funcionario.&#34;BairroFuncionario&#34;]"/>
+      <TfrxMemoView Name="funcionarioCidadeFuncionario" Left="7,55906" Top="37,7953" Width="158,74026" Height="18,89765" DataField="CidadeFuncionario" DataSet="frxDBDataset3" DataSetName="funcionario" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[funcionario.&#34;CidadeFuncionario&#34;]"/>
+      <TfrxMemoView Name="funcionarioUF" Left="264,5671" Top="37,7953" Width="37,7953" Height="18,89765" DataField="UF" DataSet="frxDBDataset3" DataSetName="funcionario" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[funcionario.&#34;UF&#34;]"/>
+      <TfrxMemoView Name="funcionarioCEPFuncionario" Left="306,14193" Top="37,7953" Width="120,94496" Height="18,89765" DataField="CEPFuncionario" DataSet="frxDBDataset3" DataSetName="funcionario" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[funcionario.&#34;CEPFuncionario&#34;]"/>
+      <TfrxMemoView Name="funcionarioTipo" Left="7,55906" Top="64,25201" Width="71,81107" Height="18,89765" DataField="Tipo" DataSet="frxDBDataset3" DataSetName="funcionario" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[funcionario.&#34;Tipo&#34;]"/>
+      <TfrxMemoView Name="funcionarioCadastroOficial" Left="306,14193" Top="64,25201" Width="120,94496" Height="18,89765" DataField="CadastroOficial" DataSet="frxDBDataset3" DataSetName="funcionario" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[funcionario.&#34;CadastroOficial&#34;]"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="86,92919" Left="0" Top="132,28355" Width="718,1107">
+      <TfrxMemoView Name="Memo1" Left="7,55906" Top="3,77953" Width="49,13389" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="Código:"/>
+      <TfrxMemoView Name="Memo2" Left="7,55906" Top="26,45671" Width="158,74026" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="Cidade:"/>
+      <TfrxMemoView Name="Memo3" Left="68,03154" Top="3,77953" Width="230,55133" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="Nome:"/>
+      <TfrxMemoView Name="Memo4" Left="306,14193" Top="3,77953" Width="207,87415" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="Endereço:"/>
+      <TfrxMemoView Name="Memo5" Left="532,91373" Top="3,77953" Width="177,63791" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="Bairro:"/>
+      <TfrxMemoView Name="Memo6" Left="306,14193" Top="34,01577" Width="120,94496" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="CEP:"/>
+      <TfrxMemoView Name="Memo7" Left="306,14193" Top="60,47248" Width="120,94496" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="Número Cadastro:"/>
+      <TfrxMemoView Name="Memo8" Left="7,55906" Top="60,47248" Width="71,81107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="TIpo:"/>
+      <TfrxMemoView Name="Memo9" Left="264,5671" Top="34,01577" Width="34,01577" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="65535" ParentFont="False" Text="UF:"/>
+    </TfrxHeader>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="52,91342" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Time" Left="631,18151" Top="26,45671" Width="79,37013" Height="18,89765" Text="[Time]"/>
+      <TfrxMemoView Name="Date" Left="631,18151" Top="0" Width="79,37013" Height="18,89765" Text="[Date]"/>
+    </TfrxPageHeader>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="30,23624" Left="0" Top="389,29159" Width="718,1107">
+      <TfrxMemoView Name="Page" Left="631,18151" Top="7,55906" Width="79,37013" Height="18,89765" Text="[Page#]"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>

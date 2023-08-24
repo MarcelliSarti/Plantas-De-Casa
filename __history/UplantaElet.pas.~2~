@@ -1,0 +1,24 @@
+unit UplantaElet;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TFRMplantaElet = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FRMplantaElet: TFRMplantaElet;
+
+implementation
+
+{$R *.dfm}
+
+end.
